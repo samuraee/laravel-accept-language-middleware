@@ -1,0 +1,48 @@
+{
+    "name": "php-monsters/laravel-accept-language-middleware",
+    "description": "Laravel middleware for setting application locale based on HTTP Accept-Language header",
+    "keywords": [
+        "language-header",
+        "accept-language",
+        "http-language",
+        "laravel",
+        "laravel middleware"
+    ],
+    "homepage": "https://github.com/php-monsters/laravel-accept-language-middleware",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Aboozar Ghaffari",
+            "email": "abooazr.ghf@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/contracts": "^12.0",
+        "illuminate/http": "^13.0",
+        "illuminate/support": "^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpMonsters\\LaravelAcceptLanguageMiddleware\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhpMonsters\\LaravelAcceptLanguageMiddleware\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
